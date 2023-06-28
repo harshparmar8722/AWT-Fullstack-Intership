@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            transition: all 2s ease-in;
+        }
+        .h1:hover{
+            transform: translate(100px,200px);
+            background-color: aquamarine;
+        }
+        .h2:hover{
+            transform: rotate(360deg);
+            background-color: aquamarine;  
+        }
+        .h3:hover{
+            transform: rotate3d(1,1,1,90deg);
+            background-color: aqua;
+        }
+        .h4:hover{
+            transform: skew(50deg);
+            background-color: aquamarine;
+        }
+        .h5:hover{
+            transform: scale(1.5,0.5);
+            background-color: antiquewhite;
+        }
+        .h6:hover{
+            opacity: 0.1;
+        }
+        .h7:hover{
+         background-color: rgba(1, 1, 0, 0.5);
+        }
+        .h8:hover{
+            box-shadow: 4px 5px 10px 20px red;
+        }
+        .h9:hover{
+            text-shadow: 10px 10px 8px;
+            background-color: aqua;
+        }
+        .h10:hover{
+            border-radius: 10%;
+            background-color: red;
+        }
+        .h11:hover{
+            overflow: auto;
+            background-color: red;
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+    
+    <div class="h1">TranslatDiv</div><hr>
+    <div class="h2">rotated</div><hr>
+    <div class="h3">rotated3d</div><hr>
+    <div class="h4">skew</div><hr>
+    <div class="h5">scale</div><hr>
+    <div class="h6">opacity</div><hr>
+    <div class="h7">rgba</div><hr>
+    <div class="h8">box-shadow</div><hr>
+    <div class="h9">text-shadow</div><hr>
+    <div class="h10">border radius</div><hr>
+    <div class="h11">Overflow</div><hr>
+       
+</body>
+</html>
