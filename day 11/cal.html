@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <p id="r1"></p>
+    <div class="container">
+        <div class="row">
+            <input type="numbers" class="col-md-6 btn btn-primary " id="n1">
+        </div>
+        <div class="row">
+           <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='1'">1</div>
+           <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='2'">2</div>
+           <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='3'">3</div>
+        
+        </div>
+        <div class="row">
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='4'">4</div>
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='5'">5</div>
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='6'">6</div>
+        </div>
+         <div class="row">
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='7'">7</div>
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='8'">8</div>
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='9'">9</div>
+           
+         </div>
+         <div class="row">
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='0'">0</div>
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='+'">+</div>
+            <div class="col-md-2 btn btn-info" onclick="document.getElementById('n1').value+='*'">*</div>
+            <div class="col-md-2 btn btn-info" onclick="fun1()">=</div>
+         </div>
+    </div>
+<script>
+    function fun1(){
+        var a=document.getElementById('n1').value;
+        var b=eval(a);
+        document.getElementById('n1').value=b;
+    }
+</script>
+</body>
+</html>

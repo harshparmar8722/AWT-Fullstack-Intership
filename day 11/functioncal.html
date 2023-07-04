@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: darkgreen;
+           
+        }
+        .container{
+            width: 450px;
+            height: 600px;
+            border: 5px solid black; 
+            background-color: dimgray;     
+        }
+
+        .container:hover{
+            transition: 2s;
+            transform: rotate(360deg);
+     
+        }
+        #g1,
+        #g2,
+        #r5 {
+            background-color: aquamarine;
+            width: 400px;
+            border: 5px solclass black;
+            
+        }
+
+        #num1,
+        #num2 {
+            width: 200px;
+            height: 30px;
+            border: 5px solid black;
+            
+        }
+
+        #r1,
+        #r2,
+        #r3,
+        #r4,
+        #ans {
+            width: 100px;
+            height: 30px;
+            border: 5px solid black;
+            margin-top: 20px;
+           
+        }
+    </style>
+</head>
+
+<body>
+        <div class="container">
+            <h1 id="g1"> Enter the First number :</h1>
+            <input type="number" id="num1">
+            <h1 id="g2"> Enter the Second number :</h1>
+            <input type="number" id="num2"><br>
+    
+    
+            <button id="r1" type="button" onclick=fun1()>Addition</button><br>
+            <button id="r2" type="button" onclick=fun2()>Subtraction</button><br>
+            <button id="r3" type="button" onclick=fun3()>Multiplication</button><br>
+            <button id="r4" type="button" onclick=fun4()>Division</button>
+            <h2 id="r5"> Answer is :</h2>
+            <p id="ans"></p>
+    
+            <script>
+                function fun1() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 + n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+                function fun2() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 - n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+                function fun3() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 * n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+                function fun4() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 / n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+            </script>
+        </div>
+</body>
+</html>
